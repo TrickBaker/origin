@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/dialog_layout" android:background="@drawable/popupbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/dialog_pat" android:layout_centerInParent="true">
+        <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/evaluate_dialog_textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="32.0dip" android:text="@string/evaluate_show1" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/genera_showtext_color" android:id="@id/evaluate_dialog_textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="32.0dip" android:text="@string/evaluate_show2" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+        <RelativeLayout android:id="@id/layout_stars" android:paddingLeft="@dimen/genera_margin" android:paddingRight="@dimen/genera_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/genera_margin">
+            <ImageView android:id="@id/evaluate_dialog_stars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/five_stars" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/genera_margin" android:layout_marginTop="24.0dip" android:layout_marginRight="@dimen/genera_margin" android:layout_marginBottom="46.0dip" android:baselineAligned="false" android:layout_marginEnd="16.0dip">
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.andexert.library.RippleView android:gravity="center" android:id="@id/evaluate_dialog_textView_btfeedback" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rv_color="@color/ripple_color_whitebutton" style="@style/ripple_button_style">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/genera_showtext_color" android:gravity="center" android:id="@id/evaluate_dialog_textView_btfeedback_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/evaluate_btfeedback" />
+                </com.andexert.library.RippleView>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.andexert.library.RippleView android:gravity="center" android:id="@id/evaluate_dialog_textView_btrate" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rv_color="@color/ripple_color_whitebutton" style="@style/ripple_button_style">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/old_background_blue" android:gravity="center" android:id="@id/evaluate_dialog_textView_btrate_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/evaluate_btsure" />
+                </com.andexert.library.RippleView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/dialog_pat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginBottom="-18.0dip" android:src="@drawable/dialog_pat_1" android:layout_alignLeft="@id/dialog_layout" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/dialog_pat_skin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginBottom="-18.0dip" android:src="@drawable/dialog_pat_2" android:layout_alignLeft="@id/dialog_layout" android:contentDescription="@string/app_name" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/button_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:orientation="vertical" android:id="@id/sg_button" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_margin="@dimen/genera_margin" />
+    <ImageView android:id="@id/sg_button_skin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-2.0dip" android:layout_marginTop="-8.0dip" android:src="@drawable/christmas_snow1" android:layout_alignLeft="@id/sg_button" android:layout_alignTop="@id/sg_button" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/sg_button_skin_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:layout_marginRight="-2.0dip" android:src="@drawable/christmas_snow3" android:layout_alignTop="@id/sg_button" android:layout_alignRight="@id/sg_button" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/sg_button_skin_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:layout_marginRight="40.0dip" android:src="@drawable/christmas_snow2" android:layout_toLeftOf="@id/sg_button_skin_right" android:layout_alignTop="@id/sg_button" android:layout_alignRight="@id/sg_button" android:contentDescription="@string/app_name" />
+</RelativeLayout>

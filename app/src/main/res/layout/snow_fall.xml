@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/fall_snow1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/fall_snow1" android:scaleType="fitEnd" android:contentDescription="@string/app_name" />
+            <ImageView android:id="@id/fall_snow2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/fall_snow2" android:scaleType="fitEnd" android:layout_alignParentTop="true" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+    </ScrollView>
+    <View android:id="@id/fall_snow_mask" android:background="@drawable/blue_shadow" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

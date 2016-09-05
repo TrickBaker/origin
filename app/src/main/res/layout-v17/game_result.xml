@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/dialog_layout" android:background="@drawable/game_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:layout_below="@id/dialog_pat" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="21.0dip" android:baselineAligned="false">
+            <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/game_result_text" android:id="@id/result_panel_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MEDAL" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/result_panel_medal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@drawable/medals_3" android:layout_below="@id/result_panel_text" android:contentDescription="@string/app_name" />
+                <ImageView android:id="@id/result_panel_blink" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@anim/blink" android:layout_alignLeft="@id/result_panel_medal" android:layout_alignTop="@id/result_panel_medal" android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/game_result_text" android:gravity="center" android:id="@id/result_panel_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SCORE" />
+                <TextView android:textSize="35.0sp" android:textStyle="bold" android:textColor="@color/game_result_score" android:gravity="center" android:id="@id/result_text_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-9.0dip" android:text="0" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip">
+                    <ImageView android:id="@id/result_panel_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/game_new" android:contentDescription="@string/app_name" />
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/game_result_text" android:gravity="center" android:id="@id/evaluate_dialog_textView_btrate_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BEST" />
+                </LinearLayout>
+                <TextView android:textSize="35.0sp" android:textStyle="bold" android:textColor="@color/game_result_score" android:gravity="center" android:id="@id/result_text_best" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-9.0dip" android:text="0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/genera_margin" android:layout_marginTop="6.0dip" android:layout_marginRight="@dimen/genera_margin" android:layout_marginBottom="0.0dip" android:baselineAligned="false" android:layout_marginEnd="16.0dip">
+            <LinearLayout android:gravity="center" android:id="@id/game_replay" android:background="@drawable/button3d_green" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Replay" android:drawableLeft="@drawable/play" android:drawablePadding="6.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/game_share" android:background="@drawable/button3d_blue" android:paddingLeft="28.0dip" android:paddingRight="28.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/old_background_blue" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/share_logo" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/dialog_pat" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:src="@drawable/game_over" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+    <RelativeLayout android:gravity="top" android:orientation="vertical" android:id="@id/game_ad_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-15.0dip" android:layout_below="@id/dialog_layout">
+        <include android:id="@id/facebook_game_ad" layout="@layout/facebook_game_ad" />
+        <ImageView android:background="@drawable/card_line" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+</RelativeLayout>

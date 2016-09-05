@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/background_1" android:layout_width="fill_parent" android:layout_height="@dimen/actionbar_height">
+        <include android:id="@id/include_daily_actionbar" layout="@layout/actionbar" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center|top" android:orientation="vertical" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="-2.0dip" android:layout_weight="1.0">
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/daily_listView" android:background="@android:color/transparent" android:paddingLeft="0.0dip" android:paddingRight="10.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layoutAnimation="@anim/layoutanimation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" android:paddingStart="0.0dip" android:paddingEnd="10.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/genera_showtext_color" android:id="@id/log_textView_nothing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:text="@string/log_nothing" android:drawableTop="@drawable/log_nothing" android:drawablePadding="23.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/log_button" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/include_checkcpu_singlebutton" layout="@layout/singglebutton" />
+    </LinearLayout>
+</LinearLayout>

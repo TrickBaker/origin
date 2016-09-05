@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="true"
+    android:paddingBottom="50.0dip"
+    android:paddingLeft="24.0dip"
+    android:paddingRight="24.0dip">
+
+    <RelativeLayout
+        android:id="@id/facebook_game_ad_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21.0dip"
+        android:background="@drawable/card_white"
+        android:orientation="vertical"
+        android:paddingBottom="8.0dip"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingTop="15.0dip">
+
+        <TextView
+            android:id="@id/game_ad_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lead to mobile phone"
+            android:textColor="#ff212121"
+            android:textSize="16.0sp" />
+
+        <com.facebook.ads.MediaView
+            android:id="@id/nativeAdMedia"
+            android:layout_width="fill_parent"
+            android:layout_height="160.0dip"
+            android:layout_below="@id/game_ad_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8.0dip"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@id/adChoices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/nativeAdMedia"
+            android:layout_alignTop="@id/nativeAdMedia"
+            android:layout_marginRight="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/facebook_bt_sharp" />
+
+        <LinearLayout
+            android:id="@id/layout_call"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/nativeAdMedia"
+            android:layout_alignRight="@id/nativeAdMedia"
+            android:layout_below="@id/nativeAdMedia"
+            android:layout_marginTop="14.0dip"
+            android:background="@drawable/button_yellow"
+            android:orientation="horizontal">
+
+            <com.andexert.library.RippleView
+                android:id="@id/callToAction"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/nativeAdCallToAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:text="FREE"
+                    android:textColor="@android:color/white"
+                    android:textSize="16.0sp" />
+            </com.andexert.library.RippleView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

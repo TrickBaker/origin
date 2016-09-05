@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="help_entity_1">
+        <item>잘못된 설계로 인해 일부 앱이 백그라운드에서 지속적으로 CPU를 사용하여 전화기 과열을 초래할 수 있습니다.</item>
+        <item>백그라운드에서 동시에 너무 많은 앱을 실행하면 CPU 과부하가 초래되고 전화기 온도가 급격하게 높아질 수 있습니다.</item>
+        <item>복잡한 앱을 사용하고, 게임을 플레이하거나 오랜 시간 동안 비디오를 시청할 경우 전화기가 과열될 수 있습니다. 전화기를 내려 놓고 잠시 동안 그대로 두면 온도가 곧 정상 수준으로 내려갑니다.</item>
+        <item>배터리를 충전하는 동안 충전 모듈이 많은 열을 생성하므로 전화기가 약간 가열되는 현상은 정상적입니다. 보다 나은 열 방출을 위해 전화기를 더 시원하고 통풍이 잘 되는 곳에 둘 수 있습니다.</item>
+    </string-array>
+    <string-array name="help_entity_2">
+        <item>높은 전화기 온도는 전화기 성능에 영향을 주어 느려지고, 작동을 멈추거나 재부팅되는 현상을 초래합니다. 너무 오랫동안 고온 상태로 전화기를 작동할 경우 내부의 전자부품이 마모되어 전화기의 서비스 수명이 줄어들 수 있습니다.</item>
+    </string-array>
+    <string-array name="help_entity_3">
+        <item>Cooler Master는 전화기의 CPU 사용량을 모니터링하고 백그라운드에서 과도하게 CPU를 사용하는 앱을 발견하여 해당 앱을 종료해 전화기를 식힐 수 있습니다.</item>
+        <item>Cooler Master는 전화기를 감시하여 백그라운드에서 너무 많은 불필요한 앱이 실행 중일 때를 알려줍니다. 이로써 CPU 과부하를 방지하고 전화기를 과열로부터 보호할 수 있습니다.</item>
+    </string-array>
+    <string-array name="help_entity_4">
+        <item>일부 앱은 종료된 후 자체적으로 자동 재실행되어 온도가 다시 상승하게 될 수 있습니다. 장기 지속 냉각 기능은 이 문제를 대비하여 특별히 설계되었습니다.장기 지속 냉각 기능은 Android 전화기의 접근성 기능을 이용해 백그라운드에서 실행되는 앱을 종료함으로써 과열을 발생시키는 앱을 완전히 종료하여 다시 자동 실행되지 않게 합니다.</item>
+    </string-array>
+    <string-array name="help_title">
+        <item>과열 원인</item>
+        <item>과열로 인한 손상</item>
+        <item>Cooler Master로 전화기를 식히는 방법</item>
+        <item>장기 지속 냉각은 무엇입니까?</item>
+    </string-array>
+</resources>

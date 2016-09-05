@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="help_entity_1">
+        <item>有些异常应用因为自身的设计缺陷， 会在后台长期占用 CPU， 导致手机发热。</item>
+        <item>多个应用在后台一起运行， 导致 CPU 过载， 手机温度会在短时间内迅速升高。</item>
+        <item>使用大型应用， 玩游戏， 观看视频时间过长均会导致手机发热， 使用结束后让手机休息一会就会恢复正常。</item>
+        <item>手机充电时， 充电模块也会产生较大热量， 所以手机都会出现轻微发热， 属于正常现象。将手机放置阴凉通风处能加快散热。</item>
+    </string-array>
+    <string-array name="help_entity_2">
+        <item>手机温度过高会降低手机整体性能， 导致手机运行速度变慢， 死机， 重启等。 而手机长时间在高温状态下运行， 会导致电子元器件老化， 影响手机寿命。</item>
+    </string-array>
+    <string-array name="help_entity_3">
+        <item>智能监控手机的 CPU 占用率情况， 找出那些在后台异常占用 CPU 的应用， 关闭问题应用后将手机锁屏静置一会即可降温。</item>
+        <item>检测手机整体运行情况， 发现后台运行应用过多时提醒用户关闭暂不需要的应用， 防止 CPU 过载， 避免手机迅速升温。</item>
+    </string-array>
+    <string-array name="help_entity_4">
+        <item>某些应用被关闭后会自动重启， 导致温度重新升高， 为了解决这个问题， 降温大师开发了长效降温功能。 长效降温通过安卓手机的辅助功能特性来停止后台运行程序， 可彻底关闭发热应用， 防止应用关闭后自动重启。</item>
+    </string-array>
+    <string-array name="help_title">
+        <item>哪些情况会导致手机发热</item>
+        <item>手机温度过高的危害</item>
+        <item>降温大师如何给手机降温</item>
+        <item>什么是长效降温</item>
+    </string-array>
+</resources>

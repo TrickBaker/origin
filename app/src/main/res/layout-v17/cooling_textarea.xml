@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/include_cooling_textarea_toptext" android:paddingLeft="34.0dip" android:paddingTop="@dimen/actionbar_height" android:paddingRight="34.0dip" android:paddingBottom="50.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/result_toptext1" android:typeface="normal" android:textStyle="normal" android:textColor="@color/genera_text_color" android:id="@id/cooling_textView_showapp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/cooling_textView_showapp" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/cooling_textView_showapp">
+            <TextView android:textSize="@dimen/result_toptext2" android:typeface="normal" android:textStyle="bold" android:textColor="@color/genera_text_color" android:ellipsize="end" android:gravity="start|bottom|center" android:id="@id/cooling_textView_show1" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textSize="@dimen/result_toptext3" android:typeface="normal" android:textColor="@color/genera_text_color" android:gravity="start|center|top" android:id="@id/cooling_textView_show2" android:paddingTop="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="@dimen/lineSpacing" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

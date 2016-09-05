@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:clipChildren="false"
+    android:orientation="horizontal">
+
+    <com.andexert.library.RippleView
+        android:id="@id/actionbar_layout_back"
+        android:layout_width="64.0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="start|center"
+        android:paddingLeft="@dimen/genera_margin"
+        android:paddingRight="0.0dip"
+        app:rv_color="@color/ripple_color_bluebutton"
+        app:rv_maxRadius="35.0dip"
+        app:rv_offsetCX="-8.0dip">
+
+        <ImageView
+            android:id="@id/actionbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_white_return" />
+    </com.andexert.library.RippleView>
+
+    <TextView
+        android:id="@id/actionbar_textView_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:text="@string/checkcpu_title"
+        android:textColor="@color/genera_text_color"
+        android:textSize="@dimen/actionbar_textsize" />
+
+    <com.andexert.library.RippleView
+        android:id="@id/main_layout_btright"
+        android:layout_width="64.0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@id/main_layout_btright_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_whitelist_add" />
+    </com.andexert.library.RippleView>
+</LinearLayout>

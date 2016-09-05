@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/copy_checkcpu_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fffafafa"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/copy_checkcpu_layout_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ff0091ea"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/copy_checkcpu_animation_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#ff0091ea"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/copy_checkcpu_anim_percent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16.0dip"
+                android:layout_marginStart="16.0dip"
+                android:gravity="center"
+                android:textColor="@color/genera_text_color"
+                android:textSize="67.0sp" />
+
+            <TextView
+                android:id="@id/copy_checkcpu_anim_tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/copy_checkcpu_anim_percent"
+                android:layout_marginBottom="38.0dip"
+                android:layout_marginEnd="16.0dip"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginTop="33.0dip"
+                android:gravity="center"
+                android:text="@string/masking_anim_tip1"
+                android:textColor="@color/genera_text_color"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/copy_checkcpu_list_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/copy_checkcpu_layout_background"
+        android:layout_marginTop="-2.0dip"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@id/copy_checkcpu_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginTop="0.0dip"
+            android:layout_weight="1.0"
+            android:background="#fffafafa"
+            android:divider="@null"
+            android:dividerHeight="0.0dip"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scrollbarStyle="insideOverlay" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/evaluate_dialog_myprogress"
+        android:layout_width="22.0dip"
+        android:layout_height="22.0dip"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/copy_checkcpu_list_layout"
+        android:layout_marginEnd="@dimen/genera_margin"
+        android:layout_marginRight="@dimen/genera_margin"
+        android:layout_marginTop="21.0dip"
+        android:background="@anim/myloading"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone" />
+
+    <View
+        android:id="@id/copy_checkcpu_masking_touch"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/copy_checkcpu_layout_background"
+        android:layout_marginTop="-2.0dip"
+        android:orientation="vertical" />
+</RelativeLayout>

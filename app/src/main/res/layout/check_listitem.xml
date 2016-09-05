@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/check_listitem_ripplelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    app:rv_color="@color/ripple_color_whitebutton"
+    app:supportlowApi="true">
+
+    <LinearLayout
+        android:id="@id/check_listitem_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/check_listitem_height"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@id/check_listitem_imageView_icon"
+            android:layout_width="@dimen/check_AppIcon_width"
+            android:layout_height="@dimen/check_AppIcon_width"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/check_AppIcon_margin"
+            android:layout_marginRight="@dimen/check_AppIcon_margin"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/check_listitem_height"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/check_listitem_height"
+                android:gravity="center"
+                android:paddingLeft="0.0dip"
+                android:paddingRight="@dimen/genera_margin">
+
+                <TextView
+                    android:id="@id/check_listitem_textView_processname"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/genera_margin"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/genera_tipsAndLabelName_color"
+                    android:textSize="@dimen/check_AppLabel_textsize" />
+
+                <CheckBox
+                    android:id="@id/check_listitem_checkBox"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:background="@drawable/checkbox_style"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/check_listitem_layout"
+        android:layout_marginLeft="64.0dip"
+        android:background="@color/setting_divider"
+        android:contentDescription="@string/app_name"
+        android:orientation="vertical" />
+</com.andexert.library.RippleView>

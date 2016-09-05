@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="help_entity_1">
+        <item>Due to poor design, some apps might constantly use your CPU in the background, which causes the phone to overheat.</item>
+        <item>Running too many apps in the background at the same time might cause the CPU to overload, and phone temperature to rapidly rise.</item>
+        <item>Using complex apps, playing games, or watching videos for a long time might cause your phone to overheat. Put down the phone and leave it for a while, and the temperature will drop to normal soon.</item>
+        <item>"While recharging the battery, the charging module generates a lot of heat, so it's nothing unusual for the phone to slightly heat up. You can put the phone in a cooler and ventilated place for better heat dissipation."</item>
+    </string-array>
+    <string-array name="help_entity_2">
+        <item>"High phone temperature affects the performance of the phone, making it slow, freeze or restart. A phone that is running at high temperature for too long might cause the electronic components inside to wear out and decrease the phone's service life."</item>
+    </string-array>
+    <string-array name="help_entity_3">
+        <item>"By monitoring the phone's CPU usage and finding out those apps that are overusing CPU in the background, Cooler Master can shut them down, and let your phone cool down."</item>
+        <item>Cooler Master watches out for your phone and alerts you when there are too many unneeded apps running in the background. It prevents the CPU from overloading, and saves the phone from overheating.</item>
+    </string-array>
+    <string-array name="help_entity_4">
+        <item>After being closed, some apps might automatically re-launch themselves, causing the temperature to rise again. The long-lasting cooling feature is designed specifically for this problem. Long-lasting cooling feature closes apps running in the background by using the accessibility feature of Android phones, so the overheating apps are completely closed and will not automatically launch again.</item>
+    </string-array>
+    <string-array name="help_title">
+        <item>What causes overheating</item>
+        <item>Damages caused by overheating</item>
+        <item>How does Cooler Master cool down your phone?</item>
+        <item>What is long-lasting cooling</item>
+    </string-array>
+    <string-array name="lanuage_arr">
+        <item>English</item>
+        <item>Español</item>
+        <item>Bahasa Indonesia</item>
+        <item>日本語</item>
+        <item>한국어</item>
+        <item>Português</item>
+        <item>Русский</item>
+        <item>简体中文</item>
+        <item>繁體中文</item>
+        <item>Deutsch</item>
+        <item>Türkçe</item>
+        <item>Italiano</item>
+    </string-array>
+</resources>

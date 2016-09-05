@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="help_entity_1">
+        <item>Durch ungünstig geschriebenen Code können manche Apps die CPU zu sehr beanspuchen, wodurch das Gerät überhitzen kann.</item>
+        <item>Wenn zu viele Apps zur gleichen Zeit ausgeführt werden, kann sich die CPU überladen und die Gerätetemperatur steigt rapide an.</item>
+        <item>Anspruchsvolle Apps, Spiele oder Videos, die über einen längeren Zeitraum gespielt bzw. angesehen werden, können das Gerät überhitzen. Legen Sie Ihr Gerät ab und lassen Sie es für eine Weile ruhen, bis sich die Temperatur senkt.</item>
+        <item>Während die Batterie aufgeladen wird, produziert das Lademodul viel Wärme. Dadurch ist es nicht ungewöhnlich, wenn sich das Gerät während des Aufladens etwas aufheizt. Laden Sie Ihr Gerät an einem kühleren Ort auf, damit sich die Wärme besser verteilen kann.</item>
+    </string-array>
+    <string-array name="help_entity_2">
+        <item>Eine hohe Gerätetemperatur beeinträchtigt die Performance; das Gerät kann langsam werden, sich festfahren, oder oft neustarten. Andauerndes Überhitzen kann die Elektronik und die Bauteile innerhalb des Geräts beschädigen, wodurch die Betriebsdauer beeinträchtigt wird.</item>
+    </string-array>
+    <string-array name="help_entity_3">
+        <item>Cooler Master überwacht den CPU-Verbrauch im Gerät, ermittelt die Apps, die die CPU zu sehr beanspruchen und schließt diese, sodass sich das Gerät abkühlen kann.</item>
+        <item>Cooler Master überwacht Ihr Gerät und meldet sich, wenn zu viele unnötige Apps im Hintergrund ausgeführt werden. Cooler Master verhindert ein Überladen der CPU und schützt das Gerät vor Überhitzung.</item>
+    </string-array>
+    <string-array name="help_entity_4">
+        <item>Selbst nachdem eine App geschlossen wurde können manche Apps automatisch neustarten, wodurch sich das Gerät wieder erhitzen kann. Die Funktion zum langanhaltenden Kühlen wurde speziell für dieses Problem entwickelt. Die Funktion zum langanhaltenden Kühlen schließt Apps, die im Hintergrund ausgeführt werden mithilfe der Bedienungshilfen von Android. Dadurch werden Apps, die ein Überhitzen verursachen können, vollständig geschlossen und starten nicht mehr automatisch neu.Hinweis: Langanhaltendes Kühlen benötigt mehr Zeit für den Kühlvorgang, aber ist 50% effektiver.</item>
+    </string-array>
+    <string-array name="help_title">
+        <item>Was verursacht Überhitzen</item>
+        <item>Schäden, die durch Überhitzen verursacht werden können</item>
+        <item>Wie senkt Cooler Master die Gerätetemperatur</item>
+        <item>Was ist langanhaltendes Kühlen?</item>
+    </string-array>
+</resources>

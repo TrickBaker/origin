@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@id/dialog_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_pat"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="24.0dip"
+        android:layout_marginRight="24.0dip"
+        android:background="@drawable/game_bg"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="21.0dip"
+            android:layout_marginRight="21.0dip"
+            android:layout_marginTop="9.0dip"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/result_panel_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="MEDAL"
+                    android:textColor="@color/game_result_text"
+                    android:textSize="18.0sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@id/result_panel_medal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/result_panel_text"
+                    android:layout_marginTop="3.0dip"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/medals_3" />
+
+                <ImageView
+                    android:id="@id/result_panel_blink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/result_panel_medal"
+                    android:layout_alignTop="@id/result_panel_medal"
+                    android:contentDescription="@string/app_name"
+                    android:src="@anim/blink"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/result_panel_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="SCORE"
+                    android:textColor="@color/game_result_text"
+                    android:textSize="18.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@id/result_text_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-9.0dip"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/game_result_score"
+                    android:textSize="35.0sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@id/result_panel_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="6.0dip"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/game_new"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@id/evaluate_dialog_textView_btrate_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="BEST"
+                        android:textColor="@color/game_result_text"
+                        android:textSize="18.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@id/result_text_best"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-9.0dip"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/game_result_score"
+                    android:textSize="35.0sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.0dip"
+            android:layout_marginLeft="@dimen/genera_margin"
+            android:layout_marginRight="@dimen/genera_margin"
+            android:layout_marginTop="6.0dip"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@id/game_replay"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/button3d_green"
+                android:gravity="center"
+                android:paddingBottom="5.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/play"
+                    android:drawablePadding="6.0dip"
+                    android:gravity="center"
+                    android:text="Replay"
+                    android:textColor="#ffffffff"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/game_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22.0dip"
+                android:background="@drawable/button3d_blue"
+                android:gravity="center"
+                android:paddingBottom="5.0dip"
+                android:paddingLeft="28.0dip"
+                android:paddingRight="28.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/share_logo"
+                    android:gravity="center"
+                    android:textColor="@color/old_background_blue"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/dialog_pat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7.0dip"
+        android:contentDescription="@string/app_name"
+        android:paddingLeft="24.0dip"
+        android:paddingRight="24.0dip"
+        android:src="@drawable/game_over" />
+
+    <RelativeLayout
+        android:id="@id/game_ad_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_layout"
+        android:layout_marginTop="-15.0dip"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <include
+            android:id="@id/facebook_game_ad"
+            layout="@layout/facebook_game_ad" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_line"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="24.0dip"
+            android:paddingRight="24.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

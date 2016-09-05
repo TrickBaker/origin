@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/adUnitLow" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:orientation="vertical" android:background="@color/divider_ad" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.andexert.library.RippleView android:orientation="vertical" android:id="@id/ripple_whole" android:paddingLeft="14.0dip" android:paddingTop="27.0dip" android:paddingRight="14.0dip" android:paddingBottom="27.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:rv_color="@color/ripple_color_whitebutton">
+        <ImageView android:id="@id/nativeAdIcon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/atf_icon" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/genera_tipsAndLabelName_color" android:id="@id/nativeAdTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="NQ Mobile Security" android:maxLines="2" android:layout_toLeftOf="@id/callToAction_layout" android:layout_toRightOf="@id/nativeAdIcon" android:layout_alignTop="@id/nativeAdIcon" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_toLeftOf="@id/callToAction_layout" android:layout_below="@id/nativeAdTitle" android:layout_alignLeft="@id/nativeAdTitle">
+            <TextView android:textSize="10.0sp" android:textColor="@color/genera_showtext_color" android:gravity="start" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000000+ Downloads" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/callToAction_layout" android:background="@drawable/button_yellow_crowd" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/genera_margin" android:layout_marginRight="2.0dip" android:layout_marginBottom="@dimen/genera_margin" android:layout_alignParentRight="true">
+            <com.andexert.library.RippleView android:orientation="vertical" android:id="@id/callToAction" android:paddingLeft="@dimen/genera_margin" android:paddingRight="@dimen/genera_margin" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:rv_color="@color/ripple_color_whitebutton">
+                <TextView android:textSize="14.0sp" android:textColor="@color/button_yellow" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Free" android:drawableLeft="@drawable/google_play_logo" android:drawablePadding="8.0dip" android:layout_centerInParent="true" android:drawableStart="@drawable/google_play_logo" />
+            </com.andexert.library.RippleView>
+        </LinearLayout>
+    </com.andexert.library.RippleView>
+</LinearLayout>

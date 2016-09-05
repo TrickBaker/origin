@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/include_facebook_adview" layout="@layout/facebook_adview" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/background_1" android:layout_width="fill_parent" android:layout_height="@dimen/actionbar_height" android:layout_above="@id/include_facebook_adview">
+        <include android:id="@id/include_more_actionbar" layout="@layout/actionbar" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/dialog_guide"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@id/game_guide_dialog_textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/genera_margin"
+        android:text="Can you fly the little penguin through the ice cave? Cooler Master will power you forward!"
+        android:textColor="#ff03401c"
+        android:textSize="16.0sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="64.0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/genera_margin"
+        android:background="@drawable/game_bt_white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@id/game_guide_dialog_textView_btfeedback_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="40.0dip"
+            android:paddingRight="40.0dip"
+            android:text="GO"
+            android:textColor="#ff4f4f4f"
+            android:textSize="30.0sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

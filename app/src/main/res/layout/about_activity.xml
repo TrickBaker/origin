@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/background_1" android:layout_width="fill_parent" android:layout_height="@dimen/actionbar_height">
+        <include android:id="@id/include_about_actionbar" layout="@layout/actionbar" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/about_imageView_pic" android:layout_width="98.0dip" android:layout_height="98.0dip" android:layout_marginBottom="41.0dip" android:src="@drawable/start_page_logo_about" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/genera_tipsAndLabelName_color" android:layout_gravity="center_horizontal" android:id="@id/about_textView_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_version" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/genera_showtext_color" android:gravity="start" android:id="@id/about_textView_contribution" android:paddingLeft="@dimen/genera_margin" android:paddingRight="@dimen/genera_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/genera_margin" android:text="Our great gratitude to Nurullah Yılmaz for the Turkish translation" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/include_checkcpu_singlebutton" layout="@layout/singglebutton" />
+    </LinearLayout>
+</LinearLayout>

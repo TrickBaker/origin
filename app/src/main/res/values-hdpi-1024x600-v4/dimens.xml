@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="divider_width">1.0px</dimen>
+    <dimen name="main_chart_pointcircle_width">3.0dip</dimen>
+    <dimen name="main_chart_table_height">301.0dip</dimen>
+    <dimen name="main_progress_offset">2.0dip</dimen>
+    <dimen name="main_progress_percent">42.0sp</dimen>
+    <dimen name="main_progress_rimwidth">15.0dip</dimen>
+    <dimen name="main_progress_textsize">24.0sp</dimen>
+    <dimen name="main_progress_title_textsize">18.0sp</dimen>
+    <dimen name="main_temprature_margin_leftandright">16.0dip</dimen>
+    <dimen name="main_temperature_arrow_margintop">42.0dip</dimen>
+    <dimen name="main_temperature_percent_textsize">50.0sp</dimen>
+    <dimen name="main_temperature_textsize">92.0sp</dimen>
+    <dimen name="main_temperature_unit_margintop">15.0dip</dimen>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="help_entity_1">
+        <item>Akibat desain yang buruk, sebagian aplikasi mungkin terus menggunakan CPU Anda di latar belakang, yang mengakibatkan ponsel panas.</item>
+        <item>Menjalankan terlalu banyak aplikasi di latar belakang sekaligus mungkin mengakibatkan CPU kelebihan beban, dan suhu ponsel meningkat cepat.</item>
+        <item>Menggunakan aplikasi yang rumit, memainkan game, atau menonton video untuk waktu yang lama mungkin mengakibatkan ponsel Anda panas. Letakkan ponsel dan biarkan beberapa saat, agar suhunya segera turun ke normal.</item>
+        <item>Ketika mengisi baterai, modul pengisian menimbulkan banyak panas, sehingga tidak aneh bila ponsel menjadi agak panas. Anda dapat meletakkan ponsel di tempat yang lebih dingin dan berventilasi agar panasnya lebih cepat hilang.</item>
+    </string-array>
+    <string-array name="help_entity_2">
+        <item>Suhu ponsel yang tinggi mempengaruhi kinerja ponsel, menjadikannya lambat, terhenti atau restart. Ponsel yang berjalan pada suhu tinggi untuk waktu yang terlalu lama mungkin mengakibatkan keausan komponen elektronik bagian dalam dan mengurangi umur layanan ponsel.</item>
+    </string-array>
+    <string-array name="help_entity_3">
+        <item>Dengan memantau penggunaan CPU ponsel dan menemukan aplikasi yang menggunakan CPU secara berlebih di latar belakang, Cooler Master dapat menutupnya, dan membuat ponsel Anda menjadi dingin.</item>
+        <item>Cooler Master memantau ponsel Anda dan memberitahu Anda ketika terlalu banyak aplikasi tidak diperlukan yang berjalan di latar belakang. Ini mencegah CPU kelebihan beban, dan menyelamatkan ponsel dari panas berlebih.</item>
+    </string-array>
+    <string-array name="help_entity_4">
+        <item>Setelah ditutup, beberapa aplikasi mungkin secara otomatis terbuka kembali, sehingga menyebabkan suhu naik kembali. Fitur pendinginan tahan lama dirancang secara khusus untuk masalah ini. Fitur pendinginan tahan lama menutup aplikasi yang berjalan di latar belakang dengan menggunakan fitur aksesibilitas ponsel Android, sehingga aplikasi penyebab panas benar-benar ditutup dan tidak akan membuka kembali secara otomatis.</item>
+    </string-array>
+    <string-array name="help_title">
+        <item>Apa penyebab terlalu panas</item>
+        <item>Kerusakan akibat panas</item>
+        <item>Bagaimana Cooler Master mendinginkan ponsel Anda</item>
+        <item>Apa yang dimaksud pendinginan tahan lama?</item>
+    </string-array>
+</resources>

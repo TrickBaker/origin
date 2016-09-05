@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@id/analyse_imageView_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/RelativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/scan_line" />
+
+    <ImageView
+        android:id="@id/analyse_imageView_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@id/RelativeLayout1"
+        android:layout_alignLeft="@id/RelativeLayout1"
+        android:layout_alignRight="@id/RelativeLayout1"
+        android:layout_alignTop="@id/RelativeLayout1"
+        android:layout_marginBottom="47.0dip"
+        android:contentDescription="@string/app_name"
+        android:src="@color/background_blue" />
+
+    <RelativeLayout
+        android:id="@id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@id/analyse_imageView_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/scan_phone" />
+
+        <TextView
+            android:id="@id/analyse_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/analyse_imageView_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/analyse_text_margin"
+            android:text="@string/analyse_text"
+            android:textColor="@color/genera_text_color"
+            android:textSize="@dimen/analyse_textsize" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@id/analyse_imageView_light"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/analyse_imageView_background"
+        android:layout_marginTop="-47.0dip"
+        android:background="@drawable/scan_light"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@id/analyse_imageView_alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/analyse_imageView_light"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42.0dip"
+        android:contentDescription="@string/app_name"
+        android:src="#40005598" />
+</RelativeLayout>

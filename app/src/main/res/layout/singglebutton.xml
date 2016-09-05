@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:padding="@dimen/genera_margin">
+
+    <LinearLayout
+        android:id="@id/singglebutton_background"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height"
+        android:paddingBottom="3.0dip"
+        android:paddingLeft="1.0dip"
+        android:paddingRight="1.0dip"
+        android:paddingTop="0.5dip">
+
+        <com.andexert.library.RippleView
+            android:id="@id/main_textView_btcooling"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            app:rv_color="@color/ripple_color_bluebutton">
+
+            <TextView
+                android:id="@id/main_textView_btcooling_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/checkcpu_btlow"
+                android:textColor="@color/genera_text_color"
+                android:textSize="@dimen/button_textsize" />
+        </com.andexert.library.RippleView>
+    </LinearLayout>
+</LinearLayout>

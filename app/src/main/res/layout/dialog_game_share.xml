@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="top" android:orientation="vertical" android:id="@id/game_guide_layout" android:background="@drawable/dialog_score" android:paddingBottom="48.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="42.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/game_share_score" android:layout_width="94.0dip" android:layout_height="wrap_content" android:text="10" android:rotation="-20.0" />
+        <TextView android:textSize="36.0sp" android:textStyle="bold" android:textColor="#fffacc3b" android:id="@id/game_share_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="36.0dip" android:layout_marginRight="24.0dip" android:text="Great" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff03401c" android:id="@id/game_share_textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="24.0dip" android:text="@string/game_result_text_1" android:layout_below="@id/game_share_title" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/game_share_bt" android:background="@drawable/game_bt_white" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginLeft="38.0dip" android:layout_marginRight="38.0dip" android:layout_below="@id/game_share_textView2" android:layout_centerHorizontal="true">
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff4f4f4f" android:ellipsize="none" android:gravity="center" android:id="@id/game_share_textView_btfeedback_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Share on Facebook" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

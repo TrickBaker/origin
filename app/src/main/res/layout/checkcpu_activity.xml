@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/checkcpu_layout_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/checkcpu_layout_actionbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <include
+                android:id="@id/include_checkcpu_actionbar"
+                layout="@layout/actionbar" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/checkcpu_actionbar_whitelist"
+                android:layout_alignLeft="@id/checkcpu_actionbar_whitelist"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/checkcpu_actionbar_whitelist"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@id/checkcpu_whitelist_icon_masking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_whitelist"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <com.andexert.library.RippleView
+                android:id="@id/checkcpu_actionbar_whitelist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/include_checkcpu_actionbar"
+                android:layout_alignParentRight="true"
+                app:rv_color="@color/ripple_color_bluebutton" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@id/checkcpu_middle_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkcpu_layout_actionbar"
+            android:layout_marginBottom="@dimen/checkcpu_toppart_marginbottom"
+            android:layout_marginTop="@dimen/checkcpu_toppart_margintop"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip">
+
+                <TextView
+                    android:id="@id/checkcpu_textView_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="@color/genera_text_color"
+                    android:textSize="@dimen/check_allpercent_textsize" />
+
+                <ImageView
+                    android:id="@id/checkcpu_imageView_corf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:layout_toRightOf="@id/checkcpu_textView_temperature"
+                    android:background="@drawable/temperature_c_h"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top">
+
+                <TextView
+                    android:id="@id/checkcpu_textView_Show_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/genera_text_color"
+                    android:textSize="@dimen/check_allpercent_show_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/checkcpu_tipslayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkcpu_middle_layout"
+            android:background="@color/check_tips_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="8.0dip"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingTop="8.0dip">
+
+            <include
+                android:id="@id/include_checkcpu_applayout"
+                layout="@layout/appslayout"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginRight="8.0dip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/checkcpu_textView_tips"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:paddingBottom="2.0dip"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="4.0dip"
+                android:textColor="@color/genera_tipsAndLabelName_color"
+                android:textSize="@dimen/check_tipsAndShow_textsize" />
+
+            <include
+                android:id="@id/include_checkcpu_tips_number"
+                layout="@layout/checkcpu_tips_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="4.0dip"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@id/checkcpu_animation_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/checkcpu_tipslayout"
+            android:layout_alignTop="@id/checkcpu_layout_actionbar"
+            android:background="@drawable/waveblue"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@id/checkcpu_anim_percent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/genera_text_color"
+                android:textSize="67.0sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/checkcpu_anim_tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkcpu_anim_percent"
+                android:layout_marginBottom="38.0dip"
+                android:layout_marginTop="33.0dip"
+                android:gravity="center"
+                android:text="@string/masking_anim_tip1"
+                android:textColor="@color/genera_text_color"
+                android:textSize="14.0sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/checkcpu_list_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/checkcpu_buttonlayout"
+        android:layout_below="@id/checkcpu_layout_background"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@id/checkcpu_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0.0dip"
+            android:divider="@null"
+            android:dividerHeight="0.0dip"
+            android:scrollbarStyle="insideOverlay" />
+    </LinearLayout>
+
+    <View
+        android:id="@id/checkcpu_list_masking_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/checkcpu_buttonlayout"
+        android:layout_below="@id/checkcpu_layout_background"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@id/checkcpu_buttonlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <include
+            android:id="@id/include_checkcpu_singlebutton"
+            layout="@layout/singglebutton" />
+
+        <include
+            android:id="@id/include_checkcpu_twobutton"
+            layout="@layout/twobutton"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@id/checkcpu_checkbox_guide_above"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@id/checkcpu_layout_background"
+        android:layout="@layout/checkcpu_guide_checkbox_above" />
+
+    <ViewStub
+        android:id="@id/checkcpu_checkbox_guide_below"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignTop="@id/checkcpu_list_layout"
+        android:layout="@layout/checkcpu_guide_checkbox_below" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="help_entity_1">
+        <item>Por causa de um projeto ruim, alguns aplicativos podem usar constantemente a CPU em segundo plano, o que superaquece o telefone.</item>
+        <item>A execução de muitos aplicativos em segundo plano ao mesmo tempo pode causar sobrecarga na CPU, e a temperatura do telefone aumentará rapidamente.</item>
+        <item>Usar aplicativos complexos, jogar jogos ou assistir a vídeos por muito tempo pode fazer o telefone superaquecer. Coloque o telefone de lado e deixe-o por um tempo e a temperatura voltará ao normal em breve.</item>
+        <item>Durante a recarga da bateria, o módulo de carga gera uma grande quantidade de calor; por isso, não é incomum o telefone esquentar um pouco. Você pode colocar o telefone em um lugar mais fresco e ventilado para ter uma melhor dissipação do calor.</item>
+    </string-array>
+    <string-array name="help_entity_2">
+        <item>A temperatura alta do telefone afeta o desempenho dele, fazendo com que ele fique lento, trave ou reinicie. Um telefone funcionando em alta temperatura por muito tempo pode fazer com que os componentes eletrônicos no interior se desgastem e diminuam a vida útil do aparelho.</item>
+    </string-array>
+    <string-array name="help_entity_3">
+        <item>Ao monitorar o uso da CPU do telefone e descobrir os aplicativos que usam muita CPU em segundo plano, o Cooler Master pode desligá-los e fazer seu telefone esfriar.</item>
+        <item>O Cooler Master monitora seu telefone e avisa quando há muitos aplicativos desnecessários em execução em segundo plano. Ele impede que a CPU se sobrecarregue e protege o telefone contra superaquecimentos.</item>
+    </string-array>
+    <string-array name="help_entity_4">
+        <item>Após serem encerrados, alguns aplicativos podem reiniciar automaticamente, aumentando novamente a temperatura. O resfriamento de longa duração foi projetado especificamente para este problema. A função do resfriamento de longa duração é encerrar os aplicativos, em execução no segundo plano, através da função de acessibilidade dos telefones Adnroid, para que aplicativos superaquecidos sejam totalmente encerrados e não reiniciem no automático novamente.</item>
+    </string-array>
+    <string-array name="help_title">
+        <item>O que causa superaquecimento</item>
+        <item>Danos causados pelo superaquecimento</item>
+        <item>Como o Cooler Master resfria seu telefone</item>
+        <item>O que é resfriamento de longa duração?</item>
+    </string-array>
+</resources>

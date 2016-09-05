@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_chart_pointcircle_width">0.0dip</dimen>
+    <dimen name="main_chart_table_height">680.0dip</dimen>
+    <dimen name="main_progress_offset">2.0dip</dimen>
+    <dimen name="main_progress_percent">96.0sp</dimen>
+    <dimen name="main_progress_rimwidth">30.0dip</dimen>
+    <dimen name="main_progress_textsize">40.0sp</dimen>
+    <dimen name="main_progress_title_textsize">30.0sp</dimen>
+    <dimen name="main_temprature_margin_leftandright">16.0dip</dimen>
+    <dimen name="main_temperature_arrow_margintop">80.0dip</dimen>
+    <dimen name="main_temperature_percent_textsize">70.0sp</dimen>
+    <dimen name="main_temperature_textsize">140.0sp</dimen>
+    <dimen name="main_temperature_unit_margintop">30.0dip</dimen>
+    <dimen name="actionbar_height">64.0dip</dimen>
+    <dimen name="actionbar_margintop">60.0dip</dimen>
+    <dimen name="actionbar_textsize">24.0sp</dimen>
+    <dimen name="button_height">64.0dip</dimen>
+    <dimen name="button_layout_height">96.0dip</dimen>
+    <dimen name="button_textsize">20.0sp</dimen>
+    <dimen name="cooling_anim_top">240.0dip</dimen>
+    <dimen name="main_temprature_showtext_size">12.0sp</dimen>
+    <dimen name="main_text_time">14.0sp</dimen>
+</resources>

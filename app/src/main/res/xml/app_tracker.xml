@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ga_trackingId">UA-51247185-6</string>
+    <bool name="ga_autoActivityTracking">true</bool>
+    <integer name="ga_sessionTimeout">300</integer>
+    <screenName name="com.easyx.coolermaster.ui.WelcomeActivity">Welcome Page</screenName>
+    <screenName name="com.easyx.coolermaster.ui.MainActivity">Main Page</screenName>
+    <screenName name="com.easyx.coolermaster.ui.AnalyseActivity">Detect Animation</screenName>
+    <screenName name="com.easyx.coolermaster.ui.CheckCpuActivity">Detect Result Page</screenName>
+    <screenName name="com.easyx.coolermaster.ui.WhiteListActivity">Ignore List</screenName>
+    <screenName name="com.easyx.coolermaster.ui.HelpActivity">Clean Result Page</screenName>
+    <screenName name="com.easyx.coolermaster.ui.MoreActivity">More Page</screenName>
+    <screenName name="com.easyx.coolermaster.flappybird.MainGameActivity">Flappy Penpen Start Page</screenName>
+</resources>

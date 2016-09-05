@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/share_layout_parent" android:background="#fffefefe" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/dialog_title_part" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:id="@id/share_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/share_coolermaster" android:layout_marginStart="16.0dip" />
+    </LinearLayout>
+    <TextView android:background="#ffcecece" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="14.0dip" android:paddingRight="8.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="8.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_layout_facebook" android:background="@drawable/click_style" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_facebook" android:contentDescription="@null" />
+                <TextView android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/share_facebook" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_layout_twitter" android:background="@drawable/click_style" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_twitter" android:contentDescription="@null" />
+                <TextView android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/share_twitter" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_layout_tumblr" android:background="@drawable/click_style" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_tumblr" android:contentDescription="@null" />
+                <TextView android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/share_tumblr" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:baselineAligned="false">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_layout_whatsapp" android:background="@drawable/click_style" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_whatsapp" android:contentDescription="@null" />
+                <TextView android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/share_whatsapp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_layout_sms" android:background="@drawable/click_style" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_sms" android:contentDescription="@null" />
+                <TextView android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/share_sms" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_layout_mail" android:background="@drawable/click_style" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_mail" android:contentDescription="@null" />
+                <TextView android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/share_mail" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="#ffbfbfbf" android:layout_width="fill_parent" android:layout_height="1.0dip" android:contentDescription="@null" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/share_more" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <Button android:textSize="18.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/share_default_list" android:background="@drawable/more_click_style" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/share_more" />
+    </LinearLayout>
+</LinearLayout>

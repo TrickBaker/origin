@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/popupbox"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:paddingLeft="32.0dip"
+    android:paddingRight="32.0dip">
+
+    <TextView
+        android:id="@id/evaluationshunt_textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24.0dip"
+        android:gravity="start"
+        android:text="@string/main_shunt_title"
+        android:textColor="#ff000000"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:id="@id/evaluationshunt_textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22.0dip"
+        android:layout_marginTop="24.0dip"
+        android:text="@string/main_shunt_entity"
+        android:textColor="@color/genera_tipsAndLabelName_color"
+        android:textSize="16.0sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="36.0dip"
+        android:layout_marginBottom="38.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.andexert.library.RippleView
+            android:id="@id/evaluationshunt_textView_btcancel"
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_weight="1.0"
+            app:rv_color="@color/ripple_color_whitebutton">
+
+            <TextView
+                android:id="@id/evaluationshunt_textView_btcancel_text"
+                android:layout_width="fill_parent"
+                android:layout_height="36.0dip"
+                android:gravity="center"
+                android:text="@string/main_shunt_feedback"
+                android:textColor="@color/genera_tipsAndLabelName_color"
+                android:textSize="16.0sp" />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@id/evaluationshunt_textView_btrate"
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip"
+            android:layout_weight="1.0"
+            app:rv_color="@color/ripple_color_whitebutton">
+
+            <TextView
+                android:id="@id/evaluationshunt_textView_btrate_text"
+                android:layout_width="fill_parent"
+                android:layout_height="36.0dip"
+                android:gravity="center"
+                android:text="@string/main_shunt_like"
+                android:textColor="#ff0091ea"
+                android:textSize="16.0sp" />
+        </com.andexert.library.RippleView>
+    </LinearLayout>
+</LinearLayout>

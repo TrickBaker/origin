@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView android:orientation="vertical" android:id="@id/check_listitem_ripplelayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:rv_color="@color/ripple_color_whitebutton" app:supportlowApi="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/check_listitem_layout" android:layout_width="fill_parent" android:layout_height="@dimen/check_listitem_height">
+        <ImageView android:layout_gravity="center" android:id="@id/check_listitem_imageView_icon" android:layout_width="@dimen/check_AppIcon_width" android:layout_height="@dimen/check_AppIcon_width" android:layout_marginLeft="@dimen/check_AppIcon_margin" android:layout_marginRight="@dimen/check_AppIcon_margin" android:contentDescription="@string/app_name" android:layout_marginStart="@dimen/check_AppIcon_margin" android:layout_marginEnd="@dimen/check_AppIcon_margin" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/check_listitem_height">
+            <LinearLayout android:gravity="center" android:paddingLeft="0.0dip" android:paddingRight="@dimen/genera_margin" android:layout_width="fill_parent" android:layout_height="@dimen/check_listitem_height" android:paddingStart="0.0dip" android:paddingEnd="@dimen/genera_margin">
+                <TextView android:textSize="@dimen/check_AppLabel_textsize" android:textColor="@color/genera_tipsAndLabelName_color" android:ellipsize="end" android:id="@id/check_listitem_textView_processname" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/genera_margin" android:singleLine="true" android:layout_weight="1.0" android:layout_marginEnd="@dimen/genera_margin" />
+                <CheckBox android:gravity="center" android:id="@id/check_listitem_checkBox" android:background="@drawable/checkbox_style" android:focusable="false" android:clickable="false" android:layout_width="20.0dip" android:layout_height="20.0dip" android:checked="false" android:button="@android:color/transparent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:orientation="vertical" android:background="@color/setting_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="64.0dip" android:layout_below="@id/check_listitem_layout" android:contentDescription="@string/app_name" android:layout_marginStart="64.0dip" />
+</com.andexert.library.RippleView>

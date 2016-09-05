@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/genera_text_color" android:padding="@dimen/genera_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/twobutton_textView_clean_background" android:background="@drawable/button_blue" android:layout_width="0.0dip" android:layout_height="@dimen/button_height" android:layout_weight="1.0">
+        <com.andexert.library.RippleView android:gravity="center" android:id="@id/twobutton_textView_clean" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" app:rv_color="@color/ripple_color_bluebutton">
+            <TextView android:textSize="@dimen/button_textsize" android:textColor="@color/genera_text_color" android:gravity="center" android:id="@id/twobutton_textView_clean_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/checkcpu_twobt_clean" />
+        </com.andexert.library.RippleView>
+    </LinearLayout>
+</LinearLayout>

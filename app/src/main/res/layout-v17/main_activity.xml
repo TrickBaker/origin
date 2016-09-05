@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="0.0dip">
+
+    <RelativeLayout
+        android:id="@id/normal_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@id/main_old_actionbar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@id/main_old_imageView_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/genera_margin"
+                android:layout_marginLeft="@dimen/genera_margin"
+                android:layout_marginRight="@dimen/genera_margin"
+                android:layout_marginStart="@dimen/genera_margin"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/titlebar_logo" />
+
+            <TextView
+                android:id="@id/main_old_textView_title"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:text="@string/app_name"
+                android:textColor="@color/genera_text_color"
+                android:textSize="@dimen/actionbar_textsize" />
+
+            <com.andexert.library.RippleView
+                android:id="@id/main_old_layout_btmore"
+                android:layout_width="64.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:rv_color="@color/ripple_color_bluebutton">
+
+                <ImageView
+                    android:id="@id/main_old_layout_btmore_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_more" />
+            </com.andexert.library.RippleView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@id/main_abovepart"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_old_actionbar"
+            android:layout_marginEnd="@dimen/genera_margin"
+            android:layout_marginLeft="@dimen/genera_margin"
+            android:layout_marginRight="@dimen/genera_margin"
+            android:layout_marginStart="@dimen/genera_margin"
+            android:layout_marginTop="@dimen/main_chart_maginTop"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <include
+                android:id="@id/include_main_chartview"
+                layout="@layout/chartview" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+
+                <TextView
+                    android:id="@id/main_imageView_chart_corf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:text="°C"
+                    android:textColor="@color/main_chart_color"
+                    android:textSize="@dimen/main_temprature_showtext_size" />
+
+                <LinearLayout
+                    android:id="@id/oldtemlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/main_chart_maginTop"
+                    android:gravity="center|top">
+
+                    <TextView
+                        android:id="@id/main_textView_temperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/genera_margin"
+                        android:layout_marginLeft="@dimen/main_temprature_margin_leftandright"
+                        android:layout_marginRight="@dimen/genera_margin"
+                        android:layout_marginStart="@dimen/main_temprature_margin_leftandright"
+                        android:gravity="top"
+                        android:textColor="@color/genera_text_color"
+                        android:textSize="@dimen/main_temperature_textsize" />
+
+                    <TextView
+                        android:id="@id/main_imageView_temperature_corf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/main_temperature_unit_margintop"
+                        android:gravity="top"
+                        android:textColor="#ffffffff"
+                        android:textSize="@dimen/main_temperature_percent_textsize" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/main_imageView_temperature_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/genera_margin"
+                    android:layout_marginStart="@dimen/genera_margin"
+                    android:layout_marginTop="@dimen/main_temperature_arrow_margintop"
+                    android:layout_toEndOf="@id/oldtemlayout"
+                    android:layout_toRightOf="@id/oldtemlayout"
+                    android:background="@anim/arrow_low"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@id/main_chart_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/main_layout"
+                android:layout_marginTop="2.0dip"
+                android:textColor="@color/main_chart_axis_color"
+                android:textSize="@dimen/main_text_time" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@id/dragView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/main_main_layout_btcooling"
+            android:layout_below="@id/main_abovepart"
+            android:clickable="true"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.todddavies.components.progressbar.ProgressWheel
+                android:id="@id/progressBar_CPU"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20.0dip"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginStart="30.0dip"
+                android:layout_weight="1.0"
+                app:barColor="#ffb6e2ff"
+                app:barLength="60.0dip"
+                app:barWidth="@dimen/main_progress_rimwidth"
+                app:rimColor="#ff339bdf"
+                app:rimWidth="@dimen/main_progress_rimwidth"
+                app:spinSpeed="8.0dip"
+                app:text="0"
+                app:textColor="#ffffffff"
+                app:textSize="@dimen/main_progress_percent"
+                app:title_1="CPU" />
+
+            <com.todddavies.components.progressbar.ProgressWheel
+                android:id="@id/progressBar_RAM"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/main_progress_marginlr"
+                android:layout_marginLeft="@dimen/main_progress_centermaigin_half"
+                android:layout_marginRight="@dimen/main_progress_marginlr"
+                android:layout_marginStart="@dimen/main_progress_centermaigin_half"
+                android:layout_weight="1.0"
+                app:barColor="#ffb6e2ff"
+                app:barLength="60.0dip"
+                app:barWidth="@dimen/main_progress_rimwidth"
+                app:rimColor="#ff339bdf"
+                app:rimWidth="@dimen/main_progress_rimwidth"
+                app:spinSpeed="8.0dip"
+                app:text="0"
+                app:textColor="#ffffffff"
+                app:textSize="@dimen/main_progress_percent"
+                app:title_1="RAM" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/main_main_layout_btcooling"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/genera_margin"
+            android:background="@drawable/button_white"
+            android:orientation="vertical">
+
+            <com.andexert.library.RippleView
+                android:id="@id/main_main_textView_btcooling"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginEnd="1.0dip"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginStart="1.0dip"
+                android:layout_marginTop="0.5dip"
+                android:gravity="center"
+                app:rv_color="@color/ripple_color_whitebutton">
+
+                <TextView
+                    android:id="@id/main_main_textView_btcooling_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/main_btcheck"
+                    android:textColor="@color/genera_tipsAndLabelName_color"
+                    android:textSize="@dimen/button_textsize" />
+            </com.andexert.library.RippleView>
+        </LinearLayout>
+
+        <ViewStub
+            android:id="@id/sg_button_skin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_layout_height"
+            android:layout_alignParentBottom="true"
+            android:layout="@layout/single_button_skin" />
+    </RelativeLayout>
+
+    <View
+        android:id="@id/mask_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@id/main_slide_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="top"
+        app:fadeColor="#80000000"
+        app:initialState="collapsed"
+        app:paralaxOffset="0.0dip">
+
+        <LinearLayout
+            android:id="@id/layout_above"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center|top"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@id/layout_below"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/game_guide_layout" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:background="@drawable/below_shadow" />
+
+            <RelativeLayout
+                android:id="@id/main_game_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="240.0dip"
+                android:layout_gravity="center|right"
+                android:layout_marginTop="-2.0dip"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:paddingLeft="72.0dip"
+                android:paddingRight="72.0dip">
+
+                <View
+                    android:layout_width="@dimen/divider_width"
+                    android:layout_height="70.0dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/white" />
+
+                <ImageView
+                    android:id="@id/main_game_pat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/actionbar_height"
+                    android:layout_marginTop="32.0dip"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_game"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+    <LinearLayout
+        android:id="@id/main_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <include
+            android:id="@id/include_main_actionbar"
+            layout="@layout/actionbar_main" />
+    </LinearLayout>
+
+    <View
+        android:id="@id/main_game_mask_bg"
+        android:layout_width="@dimen/actionbar_height"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="72.0dip"
+        android:layout_marginTop="-2.0dip" />
+</RelativeLayout>

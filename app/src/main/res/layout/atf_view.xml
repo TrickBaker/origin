@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:orientation="vertical" android:background="@color/divider_ad" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/genera_tipsAndLabelName_color" android:gravity="center_vertical" android:background="#fffafafa" android:paddingLeft="@dimen/genera_margin" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="Further optimise" />
+    <View android:orientation="vertical" android:background="@color/divider_ad" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/atf_view_layout_click" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.andexert.library.RippleView android:gravity="start" android:orientation="horizontal" android:id="@id/ripple_whole" android:padding="@dimen/genera_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" app:rv_color="@color/ripple_color_whitebutton">
+            <ImageView android:layout_gravity="start" android:id="@id/nativeAdIcon" android:background="@drawable/atf_icon" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_marginRight="12.0dip" android:contentDescription="@string/app_name" />
+            <LinearLayout android:gravity="start" android:orientation="vertical" android:id="@id/atf_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/nativeAdIcon">
+                <TextView android:textSize="14.0sp" android:textColor="@color/genera_tipsAndLabelName_color" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Scan for and remove viruses that potentially cause your phone to overheat" />
+                <LinearLayout android:layout_gravity="end" android:background="@drawable/button_yellow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/complete_list_marginmiddle" android:layout_marginTop="@dimen/genera_margin" android:layout_marginRight="1.0dip">
+                    <com.andexert.library.RippleView android:gravity="center" android:id="@id/callToAction" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/genera_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SCAN NOW" />
+                    </com.andexert.library.RippleView>
+                </LinearLayout>
+            </LinearLayout>
+        </com.andexert.library.RippleView>
+    </LinearLayout>
+    <View android:orientation="vertical" android:background="@color/divider_ad" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

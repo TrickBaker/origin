@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="help_entity_1">
+        <item>有些異常應用因為自身的設計缺陷， 會在後台長期佔用 CPU， 導致手機發熱。</item>
+        <item>多個應用在後台一起運行， 導致 CPU 超載， 手機溫度會在短時間內迅速升高。</item>
+        <item>使用大型應用， 玩遊戲， 觀看視頻時間過長均會導致手機發熱， 使用結束後讓手機休息一會就會恢復正常。</item>
+        <item>手機充電時， 充電模組也會產生較大熱量， 所以手機都會出現輕微發熱， 屬於正常現象。 將手機放置陰涼通風處能加快散熱。</item>
+    </string-array>
+    <string-array name="help_entity_2">
+        <item>手機溫度過高會降低手機整體性能， 導致手機運行速度變慢， 當機， 重啟等。 而手機長時間在高溫狀態下運行， 會導致電子元器件老化， 影響手機壽命。</item>
+    </string-array>
+    <string-array name="help_entity_3">
+        <item>智慧監控手機的 CPU 佔用率情況， 找出那些在後台異常佔用 CPU 的應用， 關閉問題應用後將手機鎖屏靜置一會即可降溫。</item>
+        <item>檢測手機整體運行情況， 發現後台運行應用過多時提醒使用者關閉暫不需要的應用， 防止 CPU 超載， 避免手機迅速升溫。</item>
+    </string-array>
+    <string-array name="help_entity_4">
+        <item>某些应用被关闭后会自动重启， 导致温度重新升高， 为了解决这个问题， 降温大师开发了长效降温功能。 长效降温通过安卓手机的辅助功能特性来停止后台运行程式， 可彻底关闭发热应用， 防止应用关闭后自动重启。</item>
+    </string-array>
+    <string-array name="help_title">
+        <item>哪些情況會導致手機發熱</item>
+        <item>手機溫度過高的危害</item>
+        <item>降溫大師如何給手機降溫</item>
+        <item>什麼是長效降溫</item>
+    </string-array>
+</resources>

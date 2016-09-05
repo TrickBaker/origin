@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/guide_bg" android:scaleType="fitXY" />
+    <include android:id="@id/include_about_actionbar" layout="@layout/actionbar" />
+    <ImageView android:id="@id/guide_button_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_play_3d" android:layout_above="@id/guide_fingure" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/guide_fingure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-47.0dip" android:layout_marginTop="-47.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/guide_fingure" android:layout_toRightOf="@id/guide_button_play" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/guide_gp_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:src="@drawable/guide_gp_logo" android:layout_below="@id/guide_button_play" android:layout_centerHorizontal="true" />
+</RelativeLayout>

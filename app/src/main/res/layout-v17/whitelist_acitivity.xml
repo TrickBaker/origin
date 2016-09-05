@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/whitelist_actionbar" android:background="@drawable/background_1" android:layout_width="fill_parent" android:layout_height="@dimen/actionbar_height">
+        <include android:id="@id/include_whitelist_actionbar" layout="@layout/actionbar" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/whitelist_tipslayout" android:background="@color/check_tips_background" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+        <TextView android:textSize="@dimen/check_tipsAndShow_textsize" android:textColor="@color/genera_tipsAndLabelName_color" android:gravity="center_vertical" android:id="@id/whitelist_textView_tips" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/whitelist_tips" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/whitelist_bottomlayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/whitelist_listView" android:background="@android:color/transparent" android:focusable="false" android:focusableInTouchMode="false" android:layoutAnimation="@anim/layoutanimation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/genera_showtext_color" android:gravity="center" android:id="@id/whitelist_textView_nothing" android:paddingLeft="@dimen/genera_margin" android:paddingRight="@dimen/genera_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:text="@string/whitelist_none" android:layout_centerInParent="true" android:paddingStart="@dimen/genera_margin" android:paddingEnd="@dimen/genera_margin" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/whitelist_button" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/include_checkcpu_singlebutton" layout="@layout/singglebutton" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

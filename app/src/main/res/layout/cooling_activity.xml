@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/cooling_background_below"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@id/cooling_sliding_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        app:panelHeight="0.0dip"
+        app:shadowHeight="1.0dip">
+
+        <RelativeLayout
+            android:id="@id/cooling_above_part"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@id/cooling_switchbackground_below"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/actionbar_height">
+
+                <ImageView
+                    android:id="@id/cooling_imageview_background_below"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_marginLeft="40.0dip"
+                    android:layout_marginRight="40.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/phone"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="center|top"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/cooling_layout_upstep"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80.0dip"
+                android:layout_marginRight="80.0dip"
+                android:gravity="center|top"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/cooling_anim_top">
+
+                <RelativeLayout
+                    android:id="@id/cooling_layout_animation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@id/cooling_imageView_animation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fan_animation_leaf"
+                        android:contentDescription="@string/app_name" />
+
+                    <ImageView
+                        android:id="@id/cooling_imageView_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fan_animation_fan_round"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/cooling_dragView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:focusable="false"
+            android:orientation="vertical">
+
+            <include
+                android:id="@id/admob_game_ad"
+                layout="@layout/admob_game_ad" />
+
+            <ListView
+                android:id="@id/complete_slding_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:divider="@null"
+                android:dividerHeight="0.0dip"
+                android:fadingEdge="none"
+                android:gravity="top"
+                android:layoutAnimation="@anim/layoutanimation"
+                android:overScrollMode="never"
+                android:paddingTop="@dimen/actionbar_height"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@id/cooling_finish_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <include
+                android:id="@id/include_cooling_textarea"
+                layout="@layout/cooling_textarea" />
+        </RelativeLayout>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+    <include
+        android:id="@id/include_cooling_singlebutton"
+        layout="@layout/singglebutton"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@id/main_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="300.0dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_whatsapp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@id/cooling_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height">
+
+        <include
+            android:id="@id/include_cooling_actionbar"
+            layout="@layout/actionbar"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@id/snow_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout="@layout/snow_fall" />
+</RelativeLayout>

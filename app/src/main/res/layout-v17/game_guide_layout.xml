@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="start|center" android:orientation="vertical" android:id="@id/more_layout_AdTitle" android:background="#ffffffff" android:focusable="false" android:focusableInTouchMode="true" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/actionbar_height">
+        <TextView android:textSize="20.0sp" android:textColor="@color/genera_tipsAndLabelName_color" android:gravity="start|center" android:id="@id/more_textView_AdTitle" android:paddingLeft="@dimen/genera_margin" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PenPen Family" android:drawableLeft="@drawable/game_guide_icon" android:drawablePadding="10.0dip" android:paddingStart="@dimen/genera_margin" android:paddingEnd="0.0dip" />
+    </LinearLayout>
+    <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+    <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:id="@id/bird_ripple" android:background="@android:color/white" android:paddingLeft="@dimen/genera_margin" android:paddingTop="20.0dip" android:paddingRight="@dimen/genera_margin" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:rv_color="@color/ripple_color_whitebutton">
+        <ImageView android:id="@id/bird_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_bird" android:layout_centerVertical="true" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/genera_margin" android:layout_toRightOf="@id/bird_img" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/game_button_blue" android:gravity="start|center" android:id="@id/bird_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Flappy PenPen" />
+            <LinearLayout android:layout_gravity="left" android:background="@drawable/button_corners_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.andexert.library.RippleView android:gravity="center" android:orientation="horizontal" android:id="@id/bird_button_ripple" android:layout_width="fill_parent" android:layout_height="40.0dip" app:rv_color="@color/ripple_color_bluebutton">
+                    <TextView android:textSize="@dimen/more_list_textsize" android:textColor="@android:color/white" android:gravity="center" android:id="@id/bird_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Play" android:drawableLeft="@drawable/game_bt_play" android:drawablePadding="6.0dip" />
+                </com.andexert.library.RippleView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:id="@id/stick_ripple" android:background="@android:color/white" android:paddingLeft="@dimen/genera_margin" android:paddingTop="10.0dip" android:paddingRight="@dimen/genera_margin" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/stick_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_stick" android:layout_centerVertical="true" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/genera_margin" android:layout_toRightOf="@id/stick_img" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/game_button_green" android:gravity="start|center" android:id="@id/stick_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stick PenPen" />
+            <LinearLayout android:layout_gravity="left" android:id="@id/stick_button_bg" android:background="@drawable/button_corners_green" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.andexert.library.RippleView android:gravity="center" android:orientation="horizontal" android:id="@id/stick_button_ripple" android:layout_width="fill_parent" android:layout_height="40.0dip" app:rv_color="@color/ripple_color_bluebutton">
+                    <TextView android:textSize="@dimen/more_list_textsize" android:textColor="@android:color/white" android:gravity="center" android:id="@id/stick_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Download" android:drawableLeft="@drawable/game_bt_gp" android:drawablePadding="6.0dip" />
+                </com.andexert.library.RippleView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

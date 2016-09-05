@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_chart_pointcircle_width">3.5dip</dimen>
+    <dimen name="main_chart_table_height">200.0dip</dimen>
+    <dimen name="main_progress_offset">1.0dip</dimen>
+    <dimen name="main_progress_percent">28.0sp</dimen>
+    <dimen name="main_progress_rimwidth">9.0dip</dimen>
+    <dimen name="main_progress_textsize">14.0sp</dimen>
+    <dimen name="main_progress_title_textsize">12.0sp</dimen>
+</resources>

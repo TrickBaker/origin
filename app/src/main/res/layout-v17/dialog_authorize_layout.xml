@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:background="@android:color/white" android:paddingTop="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="@color/genera_tipsAndLabelName_color" android:gravity="start" android:id="@id/authorize_textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/authorize_title" android:layout_marginEnd="16.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/genera_showtext_color" android:id="@id/authorize_textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="34.0dip" android:text="@string/authorize_detail" android:lineSpacingMultiplier="1.2" />
+    </LinearLayout>
+    <View android:orientation="vertical" android:background="@color/setting_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <com.andexert.library.RippleView android:gravity="center" android:id="@id/authorize_textView_bt_cancel" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" app:rv_color="@color/ripple_color_whitebutton">
+            <TextView android:textSize="18.0sp" android:textColor="@color/genera_tipsAndLabelName_color" android:gravity="center" android:id="@id/authorize_textView_bt_cancel_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_cancel" />
+        </com.andexert.library.RippleView>
+        <com.andexert.library.RippleView android:gravity="center" android:id="@id/authorize_textView_bt_sure" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" app:rv_color="@color/ripple_color_whitebutton">
+            <TextView android:textSize="18.0sp" android:textColor="#ff0091ea" android:gravity="center" android:id="@id/authorize_textView_bt_sure_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/authorize_permit" />
+        </com.andexert.library.RippleView>
+    </LinearLayout>
+</LinearLayout>

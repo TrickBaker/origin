@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView android:gravity="center_vertical" android:paddingLeft="@dimen/genera_margin" android:paddingRight="@dimen/genera_margin" android:layout_width="fill_parent" android:layout_height="48.0dip" app:rv_color="@color/ripple_color_whitebutton"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/check_AppLabel_textsize" android:textColor="@color/genera_tipsAndLabelName_color" android:id="@id/language_listitem_textView_processname" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.andexert.library.RippleView>

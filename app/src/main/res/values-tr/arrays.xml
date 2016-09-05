@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="help_entity_1">
+        <item>"Zayıf tasarım nedeniyle bazı uygulamalar telefonunun aşırı ısınmasına neden olacak şekilde arka planda sürekli CPU'nuzu kullanır."</item>
+        <item>"Aynı anda arka planda çok fazla uygulamanın çalışması CPU'ya aşırı yüklenilmesine ve telefon sıcaklığının hızlı şekilde artmasına sebep olabilir."</item>
+        <item>Karmaşık uygulamaların kullanılması, uzun süre oyun oynamak veya video izlemek telefonunuzun aşırı ısınmasına neden olabilir. Telefonu indirin ve biraz bekleyin ısı en kısa zamanda normale döner.</item>
+        <item>Pili yeniden şarj ederken, şarj modulü çok fazla sıcaklık üretir, du nedenle telefonunun biraz ısınması oldukça normaldir. Daha iyi ısı yayılımı için telefonu daha soğuk ve havalanan bir yere koyabilirsiniz.</item>
+    </string-array>
+    <string-array name="help_entity_2">
+        <item>Yüksek telefon sıcaklığı telefonun yavaşlamasına, donmasına ya da yeniden başlamasına neden olarak performansını etkiler. Uzun süre yüksek sıcaklıklarda çalışan bir telefon içindeki elektronik bileşenlerin aşınmasına ve telefonun hizmet ömrünün azalmasına neden olabilir.</item>
+    </string-array>
+    <string-array name="help_entity_3">
+        <item>"Telefonun CPU kullanımını izleyerek ve arka planda CPU'yu aşırı kullanan uygulamaları bularak, Cooler Master bunları kapatabilir ve telefonunuzun soğumasını sağlar."</item>
+        <item>"Cooler Master telefonunuzu izler ve arkaplanda çalışan çok fazla gereksiz uygulama olduğunda sizi uyarır. CPU'ya aşırı yüklenmesinden korur ve telefonun aşırı ısınmasını engeller."</item>
+    </string-array>
+    <string-array name="help_entity_4">
+        <item>Kapatıldıktan sonra, bazı uygulamalar ısının yeniden yükselmesine neden olacak şekilde otomatik olarak yeniden başlatılır. Uzun süreli soğutma özelliği özellikle bu sorun için tasarlanmıştır. Uzun süreli soğutma özelliği Android telefonların erişim özelliğini kullanarak arka planda çalışan uygulamaları kapatır böylece aşırı ısınmaya neden olan uygulamalar tamamen kapatılır ve yeniden otomatik olarak başlatılmaz.</item>
+    </string-array>
+    <string-array name="help_title">
+        <item>Aşırı ısınmaya ne sebep oluyor</item>
+        <item>Aşırı ısınma nedeniyle meydana gelen hasarlar</item>
+        <item>Cooler Master telefonunuzu nasıl soğutur</item>
+        <item>Uzun süreli soğutma nedir</item>
+    </string-array>
+</resources>

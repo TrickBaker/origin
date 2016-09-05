@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_item_linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="8.0dip" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/main_item_icon_width" android:layout_height="fill_parent">
+            <TextView android:textSize="10.0sp" android:textColor="@color/genera_text_color" android:gravity="center" android:id="@id/main_item_TextView_temperature" android:background="@drawable/timeline_red" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/genera_tipsAndLabelName_color" android:id="@id/main_item_textView_entity" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/main_item_time_textsize" android:textColor="@color/genera_showtext_color" android:gravity="end" android:id="@id/main_item_textView_time" android:layout_width="@dimen/main_item_time_textwidth" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="8.0dip" android:layout_marginEnd="8.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/main_item_button_textsize" android:textColor="#ff0091ea" android:id="@id/main_item_textView_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/main_item_icon_width" android:layout_marginTop="5.0dip" android:layout_marginStart="@dimen/main_item_icon_width" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/adUnit" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.andexert.library.RippleView android:orientation="vertical" android:id="@id/layout_click_whole" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:rv_color="@color/ripple_color_whitebutton">
+        <View android:orientation="vertical" android:background="@color/divider_ad" android:layout_width="fill_parent" android:layout_height="@dimen/divider_width" />
+        <LinearLayout android:id="@id/layout_info" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/genera_margin" android:layout_marginTop="14.0dip" android:layout_marginRight="@dimen/genera_margin">
+            <ImageView android:id="@id/nativeAdIcon" android:layout_width="62.0dip" android:layout_height="62.0dip" android:contentDescription="@string/app_name" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/genera_tipsAndLabelName_color" android:ellipsize="end" android:id="@id/nativeAdTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/genera_showtext_color" android:ellipsize="end" android:id="@id/nativeAdBody" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.facebook.ads.MediaView android:gravity="center" android:id="@id/nativeAdMedia" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/genera_margin" android:layout_marginRight="@dimen/genera_margin" android:scaleType="centerCrop" android:layout_below="@id/layout_info" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/adChoices" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/facebook_bt_sharp" android:layout_alignTop="@id/nativeAdMedia" android:layout_alignRight="@id/nativeAdMedia" android:contentDescription="@string/app_name" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/button_yellow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/genera_margin" android:layout_marginTop="14.0dip" android:layout_marginRight="@dimen/genera_margin" android:layout_below="@id/nativeAdMedia">
+            <com.andexert.library.RippleView android:orientation="vertical" android:id="@id/layout_call" android:layout_width="fill_parent" android:layout_height="40.0dip" app:rv_color="@color/ripple_color_yellowbutton">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/nativeAdCallToAction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Install Now" android:layout_centerInParent="true" />
+            </com.andexert.library.RippleView>
+        </LinearLayout>
+    </com.andexert.library.RippleView>
+</LinearLayout>

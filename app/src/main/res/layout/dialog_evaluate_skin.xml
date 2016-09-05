@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@id/dialog_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_pat"
+        android:layout_centerInParent="true"
+        android:background="@drawable/popupbox"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/evaluate_dialog_textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32.0dip"
+            android:layout_marginRight="32.0dip"
+            android:layout_marginTop="28.0dip"
+            android:text="@string/evaluate_show1"
+            android:textColor="#ff000000"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@id/evaluate_dialog_textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32.0dip"
+            android:layout_marginRight="32.0dip"
+            android:layout_marginTop="24.0dip"
+            android:text="@string/evaluate_show2"
+            android:textColor="@color/genera_showtext_color"
+            android:textSize="16.0sp" />
+
+        <RelativeLayout
+            android:id="@id/layout_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/genera_margin"
+            android:paddingLeft="@dimen/genera_margin"
+            android:paddingRight="@dimen/genera_margin">
+
+            <ImageView
+                android:id="@id/evaluate_dialog_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/five_stars" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="46.0dip"
+            android:layout_marginLeft="@dimen/genera_margin"
+            android:layout_marginRight="@dimen/genera_margin"
+            android:layout_marginTop="24.0dip"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center">
+
+                <com.andexert.library.RippleView
+                    android:id="@id/evaluate_dialog_textView_btfeedback"
+                    style="@style/ripple_button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:rv_color="@color/ripple_color_whitebutton">
+
+                    <TextView
+                        android:id="@id/evaluate_dialog_textView_btfeedback_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/evaluate_btfeedback"
+                        android:textColor="@color/genera_showtext_color"
+                        android:textSize="16.0sp" />
+                </com.andexert.library.RippleView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center">
+
+                <com.andexert.library.RippleView
+                    android:id="@id/evaluate_dialog_textView_btrate"
+                    style="@style/ripple_button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:rv_color="@color/ripple_color_whitebutton">
+
+                    <TextView
+                        android:id="@id/evaluate_dialog_textView_btrate_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/evaluate_btsure"
+                        android:textColor="@color/old_background_blue"
+                        android:textSize="16.0sp" />
+                </com.andexert.library.RippleView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/dialog_pat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/dialog_layout"
+        android:layout_marginBottom="-18.0dip"
+        android:layout_marginLeft="11.0dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/dialog_pat_1" />
+
+    <ImageView
+        android:id="@id/dialog_pat_skin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/dialog_layout"
+        android:layout_marginBottom="-18.0dip"
+        android:layout_marginLeft="11.0dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/dialog_pat_2" />
+</RelativeLayout>

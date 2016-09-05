@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="help_entity_1">
+        <item>Debido a un mal diseño, algunas aplicaciones pueden usar constantemente tu CPU en segundo plano, lo cual causa que el teléfono se sobrecaliente.</item>
+        <item>Ejecutar demasiadas aplicaciones en segundo plano al mismo tiempo puede causar que el CPU sufra una sobrecarga y que la temperatura del teléfono se incremente rápidamente.</item>
+        <item>Usar aplicaciones complejas, jugar videojuegos o ver videos durante mucho tiempo puede causar que tu teléfono se sobrecaliente. Deja de usar el teléfono durante un momento, y la temperatura volverá a bajar a su nivel normal muy pronto.</item>
+        <item>Mientras se recarga la batería, el módulo de carga genera mucho calor, así que no es raro que el teléfono se caliente un poco. Puedes poner el teléfono en un lugar más fresco y ventilado para que se disipe mejor el calor.</item>
+    </string-array>
+    <string-array name="help_entity_2">
+        <item>La temperatura alta del teléfono afecta su rendimiento, haciendo que se vuelva lento, que se congele o se reinicie. Un teléfono que se está ejecutando con una temperatura alta durante mucho tiempo puede causar que los componentes electrónicos internos se desgasten y que disminuya la vida de servicio del teléfono.</item>
+    </string-array>
+    <string-array name="help_entity_3">
+        <item>Al monitorear el uso del CPU de tu teléfono y encontrar las aplicaciones que usan demasiado el CPU en segundo plano, Cooler Master puede desactivarlas y dejar que tu teléfono se enfríe.</item>
+        <item>Cooler Master cuida de tu teléfono y te avisa cuando hay muchas aplicaciones innecesarias ejecutándose en segundo plano. Evita que el CPU se sobrecargue y no deja que el teléfono se sobrecaliente.</item>
+    </string-array>
+    <string-array name="help_entity_4">
+        <item>Después de cerrarse, algunas aplicaciones se podrían volver a iniciar automáticamente, lo que hace que la temperatura vuelva a elevarse. La función de enfriamiento de larga duración está diseñada específicamente para este problema. La función de enfriamiento de larga duración cierra aplicaciones que se ejecutan en el fondo al usar la función de accesibilidad de los teléfonos Android, de manera que las aplicaciones de sobrecalentamiento están completamente cerradas y no se iniciarán de nuevo automáticamente.</item>
+    </string-array>
+    <string-array name="help_title">
+        <item>Qué causa el sobrecalentamiento</item>
+        <item>Daños causados por el sobrecalentamiento</item>
+        <item>Cómo Cooler Master enfría tu teléfono</item>
+        <item>¿Qué es el enfriamiento de larga duración?</item>
+    </string-array>
+</resources>

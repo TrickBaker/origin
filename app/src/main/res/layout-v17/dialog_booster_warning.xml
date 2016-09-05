@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:background="@drawable/popupbox" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:paddingStart="40.0dip" android:paddingEnd="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/dialog_booster_warning_textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/dialog_booster_warning_title" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff005598" android:id="@id/dialog_booster_warning_textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="16.0dip" android:text="@string/dialog_booster_warning_entity" />
+    <com.andexert.library.RippleView android:gravity="center" android:layout_gravity="end" android:id="@id/dialog_booster_warning_textView_btrate" android:paddingLeft="35.0dip" android:paddingRight="35.0dip" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginRight="-8.0dip" android:layout_marginBottom="38.0dip" android:paddingStart="35.0dip" android:paddingEnd="35.0dip" android:layout_marginEnd="-8.0dip" app:rv_color="@color/ripple_color_whitebutton">
+        <TextView android:textSize="16.0sp" android:textColor="#ff0091ea" android:gravity="center" android:layout_gravity="end" android:id="@id/dialog_booster_warning_textView_btrate_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/help_actionbar_btknoew" />
+    </com.andexert.library.RippleView>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="help_entity_1">
+        <item>A causa di una progettazione poco accurata, alcune app possono utilizzare la CPU in background in modo costante con conseguente surriscaldamento del telefono.</item>
+        <item>"L'esecuzione contemporanea di più applicazioni in background può provocare il surriscaldamento della CPU con rapido innalzamento della temperatura del telefono."</item>
+        <item>"L'uso di app complesse, il gioco prolungato o la visione di video per lungo tempo possono causare il surriscaldamento del telefono. Posare il telefono e lasciarlo inutilizzato per un po' di tempo per far tornare la temperatura a livelli normali."</item>
+        <item>Durante la carica della batteria, il modulo in carica genera molto calore, per cui è normale che il telefono diventi più caldo. Per favorire la dissipazione del calore, posizionare il telefono in luogo più fresco e ventilato.</item>
+    </string-array>
+    <string-array name="help_entity_2">
+        <item>"Le temperature elevate nel telefono influiscono sulle sue prestazioni provocando rallentamento, blocco o riavvio. Il funzionamento di un telefono a temperature elevate per lungo tempo può provocare l'usura dei componenti elettronici interni diminuendo la durata del telefono."</item>
+    </string-array>
+    <string-array name="help_entity_3">
+        <item>"Monitorando l'utilizzo della CPU del telefono e scoprendo quali app stanno sovraccaricando la CPU in background, Cooler Master può chiuderle e permettere il raffreddamento del telefono."</item>
+        <item>Cooler Master controlla il telefono e avverte quando sono in funzione troppe app non necessarie in background, evitando il sovraccarico della CPU e proteggendo il telefono da surriscaldamento.</item>
+    </string-array>
+    <string-array name="help_entity_4">
+        <item>Dopo la chiusura, molte app potrebbero riavviarsi automaticamente con conseguente innalzamento della temperatura. La funzione di raffreddamento a lungo termine è studiata per sopperire a questo problema. Sfruttando la funzione di accessibilità dei telefoni Android, il raffreddamento a lungo termine chiude le app in background chiudendo completamente le app che surriscaldano e impedendone il riavvio automatico.</item>
+    </string-array>
+    <string-array name="help_title">
+        <item>Cosa provoca il surriscaldamento</item>
+        <item>Danni provocati da surriscaldamento</item>
+        <item>In che modo Cooler Master raffredda il telefono</item>
+        <item>"Cos'è il raffreddamento a lungo termine"</item>
+    </string-array>
+</resources>
